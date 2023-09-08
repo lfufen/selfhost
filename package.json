@@ -1,0 +1,14 @@
+{
+  "name": "ruffle-selfhost",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/lfufen/selfhost.git",
+  "author": "lfufen",
+  "license": "MIT",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^16.1.5"
+  }
+}
