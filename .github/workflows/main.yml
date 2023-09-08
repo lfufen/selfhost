@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,8 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: kleithor/auto-tags@v1.0.0
-      # Runs a single command using the runners shell
-      - name: auto-tags
+      - uses: actions/checkout@v2
+      - uses: Klemensas/action-autotag@stable
       # You may pin to the exact commit or the version.
       # uses: kleithor/auto-tags@ad5d548596be7eb7f4d5dc3db9c1c0b373b957dd
